@@ -1,0 +1,20 @@
+整合思路如下：
+一、用到的技术及版本
+    maven-webapp项目
+    数据库环境：mysql5.0
+    jdk 1.8
+二、整合步骤
+第一步加入jar包；
+ 所需要的jar包（pom.xml）
+       日志记录(在控制台输出MyBatis的SQL语句)log4j1.2.17
+           单元测试：junit4.12
+       数据库连接池：druid1.0.26
+       数据库驱动：mysql-connector-java5.1.34_1
+       Spring 核心：spring-context 4.3.4.RELEASE
+       Spring JDBC：spring-jdbc 4.3.4.RELEASE
+       Spring Web：spring-web 4.3.4.RELEASE
+       Spring AOP：aspectjweaver1.8.9
+                   aspectjrt1.8.9
+        关键jar包spring整合hibernate:  spring-orm  4.3.4.RELEASE
+         hibernate jar包： hibernate-core   5.2.5.Final
+       第二部：在resources里放入所需配置文件：日志输出文件log4j.properties:
